@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<style>
+html
+{
+	background:url(img/bk2.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#cssmenu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	position:relative;
+	display:block;
+	height:36px;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:bold;
+	background:transparent url('images/off.gif') repeat-x top left;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+	border-bottom:4px solid #555555;
+	border-top:1px solid #919191;
+}
+#cssmenu li{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+#cssmenu li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('images/divider.gif') no-repeat top right;
+	}
+#cssmenu li a:hover{
+	background:transparent url('images/hover.gif') no-repeat top right;	
+	}
+.adm li a{
+	display:block;
+	float:left;
+	color:#8c3a3a;
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px 20px 0 20px;
+	height:24px;
+	background:transparent url('images/divider.gif') no-repeat top left;
+	}
+.adm li a:hover{
+	background:transparent url('images/hover.gif') no-repeat top left;	
+	}
+	
+#apDiv1 {
+	position:absolute;
+	left:0;
+	top:7px;
+	width:25px;
+	height:41px;
+	z-index:1;
+}
+#apDiv2 {
+	position:absolute;
+	left:141px;
+	top:200px;
+	width:105px;
+	height:108px;
+	z-index:2;
+}
+#apDiv3 {
+	position:absolute;
+	left:442px;
+	top:178px;
+	width:220px;
+	height:183px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	left:90px;
+	top:11px;
+	width:220px;
+	height:164px;
+	z-index:4;
+}
+#apDiv5 {
+	position:absolute;
+	left:1125px;
+	top:56px;
+	width:207px;
+	height:148px;
+	z-index:5;
+}
+#apDiv6 {
+	position:absolute;
+	left:699px;
+	top:12px;
+	width:238px;
+	height:134px;
+	z-index:6;
+}
+#apDiv7 {
+	position:absolute;
+	left:161px;
+	top:139px;
+	width:51px;
+	height:20px;
+	z-index:7;
+}
+#apDiv8 {
+	position:absolute;
+	left:428px;
+	top:174px;
+	width:76px;
+	height:17px;
+	z-index:8;
+}
+#apDiv9 {
+	position:absolute;
+	left:708px;
+	top:103px;
+	width:35px;
+	height:25px;
+	z-index:9;
+}
+#apDiv10 {
+	position:absolute;
+	left:1186px;
+	top:186px;
+	width:114px;
+	height:80px;
+	z-index:10;
+}
+#apDiv11 {
+	position:absolute;
+	display:none;
+	left:92px;
+	top:-14px;
+	width:209px;
+	height:158px;
+	z-index:11;
+}
+#apDiv4:hover #apDiv11{ display:block; }
+#apDiv12 {
+	position:absolute;
+	display:none;
+	left:434px;
+	top:147px;
+	width:240px;
+	height:180px;
+	z-index:12;
+}
+#apDiv13 {
+	position:absolute;
+	display:none;
+	left:1116px;
+	top:47px;
+	width:231px;
+	height:177px;
+	z-index:13;
+}
+#apDiv14 {
+	position:absolute;
+		display:none;
+	left:700px;
+	top:-10px;
+	width:247px;
+	height:183px;
+	z-index:14;
+}
+</style> 
+
+</head>
+<body >
+<!--
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li><a href="story/storyboard.php"><span>Story</span></a></li>
+      <li><a href='videos.html'><span>Videos</span></a></li>
+   <li><a href='About_Us.html'><span>About Us</span></a></li>
+
+   <li><a href='Contact.html'><span>Contact Us</span></a></li>
+   <li class="adm"><a href="login/login.html"></a></li>
+</ul>
+</div>
+-->
+<div id="apDiv1"><a href="login/login.html"><img src="img/admin_login_icon.png" width="30" height="32" alt="Admin Login" ></a></div>
+<div id="apDiv3" onMouseOver="show('apDiv12','apDiv3')" onMouseOut="show('apDiv3','apDiv12')"><span class="i1"><img src="img/4.png" alt="ABOUT US" width="200" height="150" border="0" usemap="#Map4">
+    <map name="Map4">
+      <area shape="rect" coords="3,4,213,157" href="story/storyboard.php">
+    </map>
+</span></div>
+<div id="apDiv4" onMouseOver="show('apDiv11','apDiv4')" onMouseOut="show('apDiv4','apDiv11')"><span class="i1"><img src="img/2.png" alt="VIDEO" width="200" height="150" border="0" usemap="#Map3"></span><span class="i1">
+  <map name="Map3">
+    <area shape="rect" coords="218,181,398,318" href="#">
+    <area shape="rect" coords="3,3,213,161" href="index.html" alt="home">
+  </map>
+</span></div>
+<div id="apDiv5" onMouseOver="show('apDiv13','apDiv5')" onMouseOut="show('apDiv5','apDiv13')"><span class="i1"><a href="aboutus.html"><img src="img/3.png" alt="STORY" width="200" height="150" border="0" usemap="#Map2"></a></span><span class="i1">
+  <map name="Map2">
+    <area shape="rect" coords="555,2,731,141" href="story/storyboard.php" alt="Story">
+  </map>
+</span></div>
+<div id="apDiv6" onMouseOver="show('apDiv14','apDiv6')" onMouseOut="show('apDiv6','apDiv14')"><span class="i1"><img src="img/1.png" alt="HOME" width="200" height="150" border="0" usemap="#Map"></span><span class="i1">
+  <map name="Map">
+    <area shape="poly" coords="83,109" href="#">
+    <area shape="rect" coords="80,180,259,317" href="index.html" alt="HOME">
+    <area shape="rect" coords="5,3,214,152" href="video/video.php">
+  </map>
+</span></div>
+<div id="apDiv7">
+  <h3 style="color:#FF0"><strong><a href="index.html">HOME</a></strong></h3>
+</div>
+<div id="apDiv8">
+  <h3 style="color:#FF0"><strong><a href="story/storyboard.php">STORIES</a></strong></h3>
+</div>
+<div id="apDiv9">
+  <h3 style="color:#FF0"><strong><a href="video/video.php">VIDEOS</a></strong></h3>
+</div>
+<div id="apDiv10">
+  <h3 style="color:#FF0"><a href="aboutus.html">ABOUT US</a></h3>
+</div>
+<div id="apDiv11"><img src="img/2.png" width="220" height="170" alt="home" longdesc="index.html"></div>
+<div id="apDiv12"><img src="img/4.png" width="234" height="192" longdesc="story/storyboard.php"></div>
+<div id="apDiv13"><img src="img/3.png" width="232" height="184" longdesc="aboutus.html"></div>
+<div id="apDiv14"><img src="img/1.png" width="220" height="170" alt="video" longdesc="video/video.php"></div>
+</div>
+</body>
+<script type="text/javascript">
+var active="";
+function show(var1,var2)
+{
+	var a=document.getElementById(var1);
+	a.style.display="block";
+	var b=document.getElementById(var2);
+	b.style.display="none";
+}
+
+</script>
+</html>

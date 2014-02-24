@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Video Player</title>
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:15px;
+	top:18px;
+	width:866px;
+	height:444px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+
+<div id="apDiv1">
+<video width="320" height="240" controls>
+  <source src=<?php echo "../".$v; ?> type="video/mp4">
+
+  Your browser does not support the video tag.
+</video>
+</div>
+</body>
+</html>
