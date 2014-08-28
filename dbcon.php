@@ -7,9 +7,11 @@
 
 <body>
 <?php
-
-mysql_connect("localhost","root","");
-mysql_select_db("kidsdb");
+$mysqli = new mysqli("localhost", "root", "", "kidsdb");
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
 ?>
 </body>
 </html>
